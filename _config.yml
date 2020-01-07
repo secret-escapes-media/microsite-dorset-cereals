@@ -1,7 +1,7 @@
 # Site settings
-title: Template
+title: The Wellbeing Collection with Dorset Cereals
 client:
-  name: Client Name
+  name: Dorset Cereals
   link: "#client-name"
 core-se-link: https://www.secretescapes.com/current-sales
 # core-se-link: https://www.secretescapes.de/aktuelle-angebote # DE
@@ -10,10 +10,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/uk/2019/template" # the subpath of the site, including territory and year
-img:     "/uk/2019/template/_assets/img"
-css:     "/uk/2019/template/_assets/css"
-js:      "/uk/2019/template/_assets/js"
+baseurl: "/uk/2020/dorset-wellbeing-collection" # the subpath of the site, including territory and year
+img:     "/uk/2020/dorset-wellbeing-collection/_assets/img"
+css:     "/uk/2020/dorset-wellbeing-collection/_assets/css"
+js:      "/uk/2020/dorset-wellbeing-collection/_assets/js"
 
 
 # Build settings

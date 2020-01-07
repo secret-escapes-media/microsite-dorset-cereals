@@ -3,6 +3,7 @@ var path         = require('path');
 var del          = require('del');
 var cp           = require('child_process');
 var browserSync  = require('browser-sync');
+var watch        = require('gulp-watch');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefix   = require('gulp-autoprefixer');
@@ -22,14 +23,11 @@ function cleanAssets() {
 
 // start browserSync local server and show under site subdirectory
 function browserSyncServe() {
-  const baseurl = '/uk/2019/template';
   browserSync.init({
-    baseDir: '_site/',
-    ui: false,
-    startPath: baseurl,
     server: {
+      baseDir: '_site/',
       routes: {
-        [baseurl]: '_site/'
+        '/uk/2020/dorset-wellbeing-collection': '_site/'
       }
     }
   });
@@ -181,9 +179,7 @@ function compressJs() {
 // compress images files for live
 function compressImages() {
   return gulp.src('./_site/_assets/img/**/*')
-  .pipe(image({
-      svgo: ['--disable', 'removeViewBox']
-    }))
+  .pipe(image())
   .pipe(gulp.dest('./_site/_assets/img'));
 }
 
