@@ -15,6 +15,9 @@
   &--bolder       { font-weight: 700; }
   &--upper        { text-transform: uppercase; }
 
+  // kerning
+  &--wide { letter-spacing: 0.1em; }
+
   // colours
   &--white { color: $grey-lightest; }
   &--black { color: $grey-dark; }

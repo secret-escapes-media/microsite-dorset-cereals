@@ -59,4 +59,20 @@
       bottom: auto;
     }
   }
+  &__title-image {
+    background-image: url('../img/content/overview/title.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 640px;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 58.4%;
+    }
+  }
 }

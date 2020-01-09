@@ -1,0 +1,51 @@
+---
+layout: default
+id: wellbeing-tips
+title: Wellbeing Tips
+nav: true
+nav-order: 2
+
+intro: >
+  <p class="text--xl">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+tips:
+  - title: Title
+    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+  - title: Title
+    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+  - title: Title
+    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+  - title: Title
+    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+  - title: Title
+    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+  - title: Title
+    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+
+---
+
+<div class="vpad--xl">
+  <div class="container">
+    <div class="width width--lg text--center">
+      {{page.intro}}
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  {% for tip in page.tips %}
+  <div class="bob{% cycle '', ' bob--swap' %}">
+    <div class="bob__img">
+      <div class="bg-img bg-img--3-2" style="background-image: url({{site.img}}/img.jpg);"></div>
+    </div>
+    <div class="bob__text">
+      <h2 class="title title--sm">{{tip.title}}</h2>
+      <div class="space--xxs"></div>
+      <p>{{tip.content}}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="space--xxl"></div>

@@ -1,8 +1,36 @@
 ---
 layout: default
 ---
+{% assign group-pages = site.html_pages | where: 'group-id', page.id %}
 
-<div class="container vpad--xxl text--center">
-  <h1 class="title title--lg">{{page.title}}</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit aliquam reprehenderit magni eius, esse quisquam minima inventore, adipisci excepturi. Quibusdam sequi eum labore vitae recusandae aliquam commodi, consectetur itaque.</p>
+
+<div class="vpad--xl">
+  <div class="container">
+    <div class="width width--lg text--center">
+      {{page.intro}}
+    </div>
+  </div>
 </div>
+
+
+<div class="container">
+  <div class="row row--6-6">
+    {% for group-page in group-pages %}
+    <div class="col">
+      <div class="bg-img bg-img--1-1 text--white" style="background-image: url({{site.img}}/img.jpg);">
+        <a href="{{site.baseurl}}/{{group-page.url}}" class="bg-img__link"></a>
+        <div class="bg-img__content">
+          <div class="boxpad--lg">
+            <h2 class="title title--lg">{{group-page.title}}</h2>
+            <p class="text--lg">{{group-page.intro}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<div class="space--xxl"></div>
+
