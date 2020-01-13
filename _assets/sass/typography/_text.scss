@@ -2,10 +2,16 @@
 
 .text {
   // sizes
-  &--xxl { font-size: 1.2rem; letter-spacing: 0; }
-  &--xl  { font-size: 1.1rem; letter-spacing: 0; }
-  &--lg  { font-size: 1.05rem; letter-spacing: 0; }
-  &--sm  { font-size: .8rem; }
+  &--xxxxl { font-size: 1.2rem; letter-spacing: 0; }
+  &--xxxl  { font-size: 1.2rem; letter-spacing: 0; }
+  &--xxl   { font-size: 1.2rem; letter-spacing: 0; }
+  &--xl    { font-size: 1.1rem; letter-spacing: 0; }
+  &--lg    { font-size: 1.05rem; letter-spacing: 0; }
+  &--sm    { font-size: .8rem; }
+  @include bp($lg) {
+    &--xxxxl { font-size: 1.4rem; letter-spacing: 0; }
+    &--xxxl  { font-size: 1.3rem; letter-spacing: 0; }
+  }
 
   // styles
   &--italic       { font-style: italic; }

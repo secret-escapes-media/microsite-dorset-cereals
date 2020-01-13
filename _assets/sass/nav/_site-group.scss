@@ -24,6 +24,7 @@ $group-nav-color:  $black;
     display: flex;
     flex-grow: 1;
     flex-basis: 0;
+    @include background-attributes;
   }
   &__link {
     display: flex;

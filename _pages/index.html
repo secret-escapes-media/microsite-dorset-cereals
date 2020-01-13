@@ -5,6 +5,8 @@ title: Overview
 nav: true
 nav-order: 1
 
+travel-stories: true
+
 banner:
   content: >
     <div class="container container--xxxl">
@@ -16,59 +18,87 @@ intro: >
 
 ---
 
-<div class="vpad--xl">
+<div class="bg--navy-texture">
+
+  <div class="vpad--xl">
+    <div class="container">
+      <div class="width width--xl text--center">
+        {{page.intro}}
+      </div>
+    </div>
+  </div>
+
+
+
+  {% if page.travel-stories %}
+
   <div class="container">
-    <div class="width width--xl text--center">
-      {{page.intro}}
-    </div>
-  </div>
-</div>
+    <div class="row row--no-gutters">
 
-
-
-<div class="container">
-  <div class="row row--no-gutters">
-
-    <div class="col col--6">
-      <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/img.jpg);">
-        <a href="{{site.baseurl}}/wellbeing-tips/" class="bg-img__link"></a>
-        <div class="bg-img__content">
-          <h2 class="title title--lg text--bold">Wellbeing tips</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="col col--6">
-      <div class="row row--no-gutters">
-        <div class="col">
-          <div class="bg-img bg-img--2-1" style="background-image: url({{site.img}}/img.jpg);">
-            <a href="{{site.baseurl}}/travel-stories/" class="bg-img__link"></a>
-            <div class="bg-img__content">
-              <div class="boxpad--lg">
-                <div class="text--upper text--wide">Travel story</div>
-                <h2 class="title title--sm text--bold">Dorset relaxation</h2>
-              </div>
+      <div class="col col--6">
+        {% assign wellbeing-tips = site.html_pages | where: 'id', 'wellbeing-tips' %}
+        {% for page in wellbeing-tips %}
+        <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/banners/{{page.id}}.jpg);">
+          <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
+          <div class="bg-img__overlay"></div>
+          <div class="bg-img__content">
+            <div class="boxpad--lg">
+              <h2 class="title title--lg text--bold">{{page.title}}</h2>
+              <p>{{page.intro}}</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="bg-img bg-img--2-1" style="background-image: url({{site.img}}/img.jpg);">
-            <a href="{{site.baseurl}}/travel-stories/" class="bg-img__link"></a>
-            <div class="bg-img__content">
-              <div class="boxpad--lg">
-                <div class="text--upper text--wide">Travel story</div>
-                <h2 class="title title--sm text--bold">Dorset adventure</h2>
+        {% endfor %}
+      </div>
+
+      <div class="col col--6">
+        <div class="row row--no-gutters">
+
+          {% assign travel-stories = site.html_pages | where: 'layout', 'story' %}
+          {% for page in travel-stories %}
+          <div class="col">
+            <div class="bg-img bg-img--2-1" style="background-image: url({{site.img}}/banners/{{page.id}}.jpg);">
+              <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
+              <div class="bg-img__overlay"></div>
+              <div class="bg-img__content">
+                <div class="boxpad--lg">
+                  <div class="text--upper text--wide">Travel story</div>
+                  <h2 class="title title--md text--bold">{{page.title}}</h2>
+                </div>
               </div>
             </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% else %}
+
+  <div class="container container--xx1">
+    <div class="row row--no-gutters">
+      <div class="col col--12">
+        <div class="bg-img bg-img--2-1 bg-img--leaf" style="background-image: url({{site.img}}/img.jpg);">
+          <a href="{{site.baseurl}}/wellbeing-tips/" class="bg-img__link"></a>
+          <div class="bg-img__overlay"></div>
+          <div class="bg-img__content">
+            <h2 class="title title--lg text--bold">Wellbeing tips</h2>
           </div>
         </div>
       </div>
     </div>
-
   </div>
-</div>
+  {% endif %}
+
+  <div class="space--xxxl"></div>
+  {% include page/promo-competition.html %}
+
+</div><!-- end .bg--navy-texture -->
 
 
+
+<div class="space--xxxl"></div>
 
 <div class="container">
 
@@ -94,27 +124,4 @@ intro: >
 </div>
 
 
-
-<div class="container container--100 container--no-padding">
-  <div class="row row--no-gutters">
-    <div class="col col--4">
-      <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/img.jpg);"></div>
-    </div>
-    <div class="col col--4">
-      <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/img.jpg);">
-        <div class="bg-img__content">
-          <div class="boxpad--lg">
-            <div class="text--upper text--wide text--xl">Breakfast on the slow</div>
-            <h2 class="title title--xl text--bold">Dorset Cereals</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col col--4">
-      <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/img.jpg);"></div>
-    </div>
-  </div>
-</div>
-
-
-
+<div class="space--xxl"></div>

@@ -5,87 +5,103 @@ title: Dorset Cereals
 nav: true
 nav-order: 4
 
+banner:
+  content: >
+    <div class="container text--center">
+      <div class="banner__partner-logo banner__partner-logo--top"></div>
+      <h1 class="banner-title">Breakfast on the Slow</h1>
+      <div class="space--xs"></div>
+      <div class="sub-title">Enjoy a calm moment worth savouring</div>
+    </div>
+
+
 intro: >
-  <p class="text--xl">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+  <p class="text--xxl">We believe that slowing down and appreciating the simple pleasures is good for the soul. As life just seems to get busier, taking the time to savour the good bits is more important than ever.</p>
+  <p class="text--xxl">So start how you mean to go on, at breakfast time, and seize the opportunity to enjoy those special moments. Whatever it is – watching a summer sun rise, breathing in the fresh air, or heading out for a breakfast picnic – it’s all about relishing right now.</p>
 
 dorset-highlights:
-  - title: Title
-    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
-  - title: Title
-    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
-  - title: Title
-    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
-  - title: Title
-    content: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+  - id: dorset
+    content: We’re based in dazzling Dorset (as you’ll probably have guessed), and we make cereals that are worth slowing down for and savouring.
+  - id: breakfast
+    content: Despite all the haste and hurry in life, we believe in a calm moment of pleasure at the start of the day. We call it Breakfast on the Slow.
+  - id: muesli
+    content: Our muesli range is high in fibre, as well as being suitable for vegans too, giving you even more reasons for a Breakfast on the Slow.
+  - id: trees
+    content: We love trees, and all the good they do for our planet. So to date, we’ve worked with the Woodland Trust to plant over 38,000 of them across the UK.
 
 products:
-  - title: Muesli
-    content: Fruity
-  - title: Muesli
-    content: Fruity
-  - title: Muesli
-    content: Fruity
-  - title: Muesli
-    content: Fruity
-  - title: Muesli
-    content: Fruity
-  - title: Muesli
-    content: Fruity
+  - id: classic
+    title: Classic fruit, nuts & seeds muesli
+  - id: organic
+    title: Our lovely organic muesli
+  - id: fantastically-fruity
+    title: Fantastically fruity muesli
+  - id: simply-fruity
+    title: Simply fruity muesli
+  - id: simply-nutty
+    title: Simply nutty muesli
+  - id: high-fibre
+    title: Fabulously high fibre muesli
+  - id: simply-delicious
+    title: Simply delicious muesli
+  - id: gloriously-nutty
+    title: Gloriously nutty muesli
+  - id: luscious-berry
+    title: Luscious berry & cherry muesli
+  - id: tasty-toasted
+    title: Tasty toasted spelt flakes muesli
 
 ---
 
-<div class="vpad--xl">
-  <div class="container">
-    <div class="width width--lg text--center">
-      {{page.intro}}
+<div class="bg--navy-texture">
+  <div class="vpad--xl">
+    <div class="container">
+      <div class="width width--lg text--center">
+        {{page.intro}}
+      </div>
     </div>
   </div>
-</div>
 
 
 
-<div class="container">
+  <div class="container container--xxl">
 
-  <div class="text--center">
-    <h2 class="title title--lg">Get to know us</h2>
-    <div class="space--lg"></div>
-  </div>
-
-  {% for highlight in page.dorset-highlights %}
-  <div class="bob{% cycle '', ' bob--swap' %}">
-    <div class="bob__img">
-      <div class="bg-img bg-img--3-2" style="background-image: url({{site.img}}/img.jpg);"></div>
-    </div>
-    <div class="bob__text">
-      <h2 class="title title--sm">{{highlight.title}}</h2>
-      <div class="space--xxs"></div>
-      <p>{{highlight.content}}</p>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-
-
-
-<div class="container">
-
-  <div class="text--center">
-    <h2 class="title title--lg">Products</h2>
-    <div class="space--lg"></div>
-  </div>
-
-  <div class="row">
-    {% for product in page.products %}
-    <div class="col col--4">
-      <div class="bg-img bg-img--3-2" style="background-image: url({{site.img}}/img.jpg);"></div>
-      <div class="boxpad--sm bg--grey-lightest">
-        <h2 class="title title--xxs">{{product.title}}</h2>
-        <p>{{product.content}}</p>
+    {% for highlight in page.dorset-highlights %}
+    <div class="bob{% cycle '', ' bob--swap' %}">
+      <div class="bob__img">
+        <div class="bg-img bg-img--16-9 bg-img--leaf-sm" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.id}}.jpg);"></div>
+      </div>
+      <div class="bob__text">
+        <div class="title title--xxs">{{highlight.content}}</div>
       </div>
     </div>
     {% endfor %}
   </div>
+
+
+
+  <div class="container">
+
+    <div class="text--center">
+      <h2 class="title title--lg">Products</h2>
+      <div class="space--lg"></div>
+    </div>
+
+    <div class="row">
+      {% for product in page.products %}
+      <div class="col col--3">
+        <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/products/{{product.id}}.jpg);"></div>
+        <div class="boxpad--sm text--center">
+          <h4 class="title title--sans title--xxxs text--bold">{{product.title}}</h4>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <div class="space--xxl"></div>
 </div>
 
 
-<div class="space--xxl"></div>
+{% include page/promo-competition.html %}
