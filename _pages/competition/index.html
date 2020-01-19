@@ -6,12 +6,24 @@ nav-order: 6
 nav-title: Competition
 
 title: Compet&shy;ition
-long-title: Win an idyllic wellbeing escape with Dorset Cereals
 
 banner:
-  title: Win an idyllic escape with Dorset Cereals
+  content: >
+    <div class="container container--no-padding">
+      <div class="width width--xxl text--center">
+        <h1 class="title title--xxxl">Win your very own wellbeing escape </h1>
+        <div class="text text--bold title--sm">with dorset cereals</div>
+        <div class="space--sm"></div>
+        <a href="#entry-form" class="btn btn--orange">{{page.enter-cta}}</a>
+      </div>
+    </div>
 
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur beatae tempora, voluptates ut recusandae ea exercitationem culpa mollitia quia similique. Perferendis cumque obcaecati ad pariatur. Quos iure sapiente amet beatae, officiis possimus minima expedita, ea ad. Doloribus et perspiciatis doloremque. Tenetur consequatur quam maiores odit, adipisci nostrum numquam quo mollitia eligendi! Debitis, culpa impedit, ex esse fugit enim quibusdam!
+intro: >
+  <p class="text--xxl">Ready to reset? We’ll send you to the breathtaking landscapes of the Lake District for a truly refreshing escape. Set on the shores of Ullswater in the Lake District, Another Place makes for an enviable stay; nestled between mountain and lake, spend two nights in gorgeous surroundings. But that’s not all; you’ll also get the chance to indulge in a 60-minute Swim Club treatment and a lake sports lesson, including either swim, kayak or stand-up paddle boarding. </p>
+
+form-intro: >
+  <p class="title title--xs">To be in with a chance of winning, answer the multiple-choice questions below before 23:59 on 2nd February 2020. Good luck!</p>
+
 enter-cta: Enter Now
 
 competition-form:
@@ -27,21 +39,9 @@ competition-form:
       type: email
       label: Email
       required: true
-    - id: qualify
-      type: radio
-      label: Are you a UK resident and over the age of 18?
-      required: true
-      options:
-        - id: qualify-true
-          label: 'Yes'
-          value: 'yes'
-        - id: qualify-false
-          label: 'No'
-          value: 'no'
-          invalid: true
     - id: opt-in
-      type: radio
-      label: Would you like to receive emails from our Partner brand?
+      type: checkbox
+      label: Would you like to receive marketing emails from dorset cereals with their latest news and offers? Please note that if you tick this box we will pass your details onto dorset cereals. To know more about how dorset cereals will use your data, see their privacy policy. You have the right to withdraw your consent and object to dorset cereals use of your details for marketing purposes at any time.
       required: true
       options:
         - id: opt-in-true
@@ -50,62 +50,53 @@ competition-form:
         - id: opt-in-false
           label: 'No'
           value: 'no'
-    - id: storytime
-      type: text-long
-      label: Tell us about your favourite travel experience
-      required: true
-    - id: eggs
-      type: select
-      label: What is your favourite continent?
+    - id: breakfast
+      type: radio
+      label: How often do you eat breakfast?
       required: true
       options:
-        - label: Africa
-          value: africa
-        - label: Antarctica
-          value: antarctica
-        - label: Asia
-          value: asia
-        - label: Europe
-          value: europe
-        - label: North America
-          value: north-america
-        - label: Oceania
-          value: oceania
-        - label: South America
-          value: south-america
-    - id: contact
-      type: checkbox
-      label: Do you have a preference on how we should contact you?
+        - id: breakfast-every-day
+          label: 'Every day'
+          value: 'every-day'
+        - id: breakfast-most-days
+          label: 'Most days'
+          value: 'most-days'
+        - id: breakfast-some-days
+          label: 'Some days'
+          value: 'some-days'
+        - id: breakfast-never
+          label: 'Never'
+          value: 'never'
+    - id: buy-dorset
+      type: radio
+      label: Do you buy dorset cereals?
       required: true
       options:
-        - id: contact-email
-          label: Email
-          value: email
-        - id: contact-post
-          label: Post
-          value: post
-        - id: contact-phone
-          label: Phone
-          value: phone
-    - id: week
-      type: select
-      label: What is your favourite day of the week?
+        - id: dorset-always
+          label: 'Every day'
+          value: 'every-day'
+        - id: dorset-sometimes
+          label: 'Sometimes'
+          value: 'sometimes'
+        - id: dorset-never
+          label: 'Never'
+          value: 'never'
+    - id: slowing-down
+      type: radio
+      label: Is slowing down in life important to you?
+      required: true
       options:
-        - label: Monday
-          value: mon
-        - label: Tuesday
-          value: tue
-        - label: Wednesday
-          value: wed
-        - label: Thursday
-          value: thur
-        - label: Friday
-          value: fri
-        - label: Saturday
-          value: sat
-        - label: Sunday
-          value: sun
-  submit: Submit Entry
+        - id: slowing-yes
+          label: 'Yes, it is'
+          value: 'yes'
+        - id: slowing-no
+          label: 'No, I’m always on the go'
+          value: 'no'
+    - id: slowing-down-moment
+      type: text
+      label: What’s your ideal moment for slowing down?
+
+  submit: Enter now
   terms: >
     By submitting your entry, you agree to the <a href="#" class="js-open-modal link--underlined" data-open-modal="competition-terms">terms and conditions</a> of this competition
 ---

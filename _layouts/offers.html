@@ -2,7 +2,24 @@
 layout: default
 ---
 
-{% include offer/all-offers.html %}
+<div class="container">
+  <div class="vpad--xxl">
+    <div class="width width--xl text--center">
+      {{page.intro}}
+    </div>
+  </div>
+
+  {% include offer/variables.html %}
+
+  <div class="row row--xl-6-6 row--gutters-lg">
+    {% for offer in offers-by-price %}
+      <div class="col">
+        {% include offer/offer.html %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="space--xxl"></div>
 
 {% include page/promo-competition.html %}
 

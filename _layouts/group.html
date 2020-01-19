@@ -17,8 +17,9 @@ layout: default
   <div class="row row--6-6">
     {% for group-page in group-pages %}
     <div class="col">
-      <div class="bg-img bg-img--1-1 text--white" style="background-image: url({{site.img}}/img.jpg);">
+      <div class="bg-img bg-img--1-1 text--white" style="background-image: url({{site.img}}/banners/{{group-page.id}}.jpg);">
         <a href="{{site.baseurl}}/{{group-page.url}}" class="bg-img__link"></a>
+        <div class="bg-img__overlay"></div>
         <div class="bg-img__content">
           <div class="boxpad--lg">
             <h2 class="title title--lg">{{group-page.title}}</h2>
