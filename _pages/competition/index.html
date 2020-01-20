@@ -29,7 +29,7 @@ enter-cta: Enter Now
 competition-form:
   id: comp
   post-url: "#getFormUrl"
-  expiry-date: 2050-01-01
+  expiry-date: 2020-02-03
   fields:
     - id: name
       type: text
@@ -39,17 +39,6 @@ competition-form:
       type: email
       label: Email
       required: true
-    - id: opt-in
-      type: checkbox
-      label: Would you like to receive marketing emails from dorset cereals with their latest news and offers? Please note that if you tick this box we will pass your details onto dorset cereals. To know more about how dorset cereals will use your data, see their privacy policy. You have the right to withdraw your consent and object to dorset cereals use of your details for marketing purposes at any time.
-      required: true
-      options:
-        - id: opt-in-true
-          label: 'Yes'
-          value: 'yes'
-        - id: opt-in-false
-          label: 'No'
-          value: 'no'
     - id: breakfast
       type: radio
       label: How often do you eat breakfast?
@@ -95,6 +84,17 @@ competition-form:
     - id: slowing-down-moment
       type: text
       label: What’s your ideal moment for slowing down?
+    - id: opt-in
+      type: checkbox
+      label: Would you like to receive marketing emails from dorset cereals with their latest news and offers? Please note that if you tick this box we will pass your details onto dorset cereals. To know more about how dorset cereals will use your data, see their privacy policy. You have the right to withdraw your consent and object to dorset cereals use of your details for marketing purposes at any time.
+      required: true
+      options:
+        - id: opt-in-true
+          label: 'Yes'
+          value: 'yes'
+        - id: opt-in-false
+          label: 'No'
+          value: 'no'
 
   submit: Enter now
   terms: >
