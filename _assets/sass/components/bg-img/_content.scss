@@ -36,6 +36,11 @@
     z-index: $z-content;
     background-color: rgba($black,.4);
     @include transition;
+    &--transparent { background-color: transparent; };
   }
-  &:hover &__overlay { background-color: rgba($black,.6); }
+  &:hover &__overlay {
+    background-color: rgba($black,.6);
+    &--transparent { background-color: rgba($black,.25) };
+  }
+  // transparent
 }

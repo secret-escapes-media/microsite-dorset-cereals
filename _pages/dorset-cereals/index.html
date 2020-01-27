@@ -32,38 +32,55 @@ dorset-highlights:
 products:
   - id: classic
     title: Classic fruit, nuts & seeds muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/classic-fruits-nuts-and-seeds-muesli/
   - id: organic
     title: Our lovely organic muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/our-lovely-organic-muesli/
   - id: fantastically-fruity
     title: Fantastically fruity muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/fantastically-fruitymuesli/
   - id: simply-fruity
     title: Simply fruity muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/simply-fruity-muesli/
   - id: simply-nutty
     title: Simply nutty muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/simply-nutty-muesli/
   - id: high-fibre
     title: Fabulously high fibre muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/fabulously-high-fibre-muesli/
   - id: simply-delicious
     title: Simply delicious muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/simply-delicious-muesli/
   - id: gloriously-nutty
     title: Gloriously nutty muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/gloriouslyroastednutmuesli/
   - id: luscious-berry
     title: Luscious berry & cherry muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/luscious-berries-cherries-muesli/
   - id: tasty-toasted
     title: Tasty toasted spelt flakes muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/tasty-toasted-spelt-flakes-muesli/
   - id: blissful-berry-muesli-gf
     title: Gluten Free Blissful Berry Muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/blissful-berry-muesli/
   - id: tasty-tropical-muesli-gf
     title: Gluten Free Tasty Tropical Muesli
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/tasty-tropical-muesli/
   - id: berry-granola
     title: Berry Granola
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/berry-granola/
   - id: choc-cherry-granola
     title: Choc Cherry Granola
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/chocolate-granola/
   - id: honey-granola
     title: Honey Granola
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/honey-granola/
   - id: nutty-granola
     title: Nutty Granola
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/simply-nut-granola/
   - id: simply-oat-granola
     title: Simply Oat Granola
+    link: https://www.dorsetcereals.co.uk/things-we-make/product/simply-oat-granola/
 
 ---
 
@@ -104,9 +121,12 @@ products:
     <div class="row">
       {% for product in page.products %}
       <div class="col col--3">
-        <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/products/{{product.id}}.jpg);"></div>
+        <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/products/{{product.id}}.jpg);">
+          <a class="bg-img__link" href="{{product.link}}" target="_blank"></a>
+          <div class="bg-img__overlay bg-img__overlay--transparent"></div>
+        </div>
         <div class="boxpad--sm text--center">
-          <h4 class="title title--sans title--xxxs text--bold">{{product.title}}</h4>
+          <h4 class="title title--sans title--xxxs text--bold"><a class="text--white" href="{{product.link}}" target="_blank">{{product.title}}</a></h4>
         </div>
       </div>
       {% endfor %}
