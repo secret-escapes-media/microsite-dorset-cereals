@@ -62,8 +62,8 @@ competition-form:
       required: true
       options:
         - id: dorset-always
-          label: 'Every day'
-          value: 'every-day'
+          label: 'Always'
+          value: 'always'
         - id: dorset-sometimes
           label: 'Sometimes'
           value: 'sometimes'
@@ -85,8 +85,10 @@ competition-form:
       type: text
       label: What’s your ideal moment for slowing down?
     - id: opt-in
-      type: checkbox
-      label: Would you like to receive marketing emails from dorset cereals with their latest news and offers? Please note that if you tick this box we will pass your details onto dorset cereals. To know more about how dorset cereals will use your data, see their privacy policy. You have the right to withdraw your consent and object to dorset cereals use of your details for marketing purposes at any time.
+      type: radio
+      label: Would you like to receive marketing emails from dorset cereals with their latest news and offers?
+      extra: >
+        Please note that if you tick this box we will pass your details onto dorset cereals. To know more about how dorset cereals will use your data, see their <a class="link--underlined" href="https://www.dorsetcereals.co.uk/privacy-policy/" target="_blank">privacy policy</a>. You have the right to withdraw your consent and object to dorset cereals use of your details for marketing purposes at any time.
       required: true
       options:
         - id: opt-in-true
