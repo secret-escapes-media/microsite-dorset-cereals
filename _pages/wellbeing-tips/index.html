@@ -14,31 +14,40 @@ intro: >
 
 tips:
 
-  - title: Coastal canter
+  - id: coastal-canter
+    title: Coastal canter
     content: Along the beautiful Dorset coastline, reconnect with the outdoors on horseback. Canter along Dorset’s gorgeous beaches, with the waves lapping the shore on one side and the craggy cliffs, dunes and pretty fishing towns to the other. Eastmoors Riding School and Studland Trekking Centre both offer coastal hacks.
 
-  - title: Sea kayaking in the Summer Isles
+  - id: sea-kayaking-in-the-summer-isles
+    title: Sea kayaking in the Summer Isles
     content: This cluster of isolated islands lies just off the rocky western shores of the Highlands, creating a beguiling scene that’s best explored on the water. Glide across the sea on a kayak, heading for the private coves and isolated outposts that make up this wild archipelago. Norwest Sea Kayaking is the closest operator to the isles.
 
-  - title: Punting down the Cam
+  - id: punting-down-the-cam
+    title: Punting down the Cam
     content: Cambridge is a wonderfully charming city, with old college buildings and leafy greens painting a perfect picture of idyllic escape. And what better way to sink into the surroundings than with a traditional punt down the river Cam? Take the grand architecture and sleepy Cambridge life in your stride, as you amble downriver at a gentle pace...
 
-  - title: Walk with Wordsworth
+  - id: walk-with-wordsworth
+    title: Walk with Wordsworth
     content: Beauty abounds in the Lakeland scenes of Aira Force & Ullswater. Fell-top expeditions and woodland glade tree trails unwind around shimmering Ullswater, and cascading waterfalls are crisscrossed by trails at beautiful Aira Force. Don’t miss the Ullswater Steamer which glides along the length of the lake, in a landscape that proved one of Wordsworth’s most cherished.
 
-  - title: Hunt for fossils on the Jurassic Coast
+  - id: hunt-for-fossils-on-the-jurassic-coast
+    title: Hunt for fossils on the Jurassic Coast
     content: This protected stretch of coastline spoils visitors with some of the finest seaside settings in Britain. Beauty spots like Lulworth Cove, Durdle Door and the lofty cliffs of Beer and West Bay are great jumping-off points; but the fun really starts when you start your fossil hunting. If you’re lucky, you’ll score a few ammonites to take home; but patience is key. The best beaches for finding your fossilised souvenir are Charmouth and Lyme Regis.
 
-  - title: Where spa meets heritage
+  - id: where-spa-meets-heritage
+    title: Where spa meets heritage
     content: Spa breaks are the obvious choice for a wellbeing escape. But the choice is vast. Our tip? Go classic, go smart, and head for the blonde Georgian wonder that is Bath. Britain’s premier spa town, the bubbling waters have been delighting visitors since the days of King Lear; now, you too can enjoy the hot springs once more, at the stylish Thermae Bath Spa. Head straight for the rooftop pool for beautiful views of Bath as you let the warm mineral waters soak away all stresses...
 
-  - title: Stargazing on the island
+  - id: stargazing-on-the-island
+    title: Stargazing on the island
     content: Already a popular short-hop island escape, the Isle of Wight is famed for its pretty villages and natural beauty; but few visitors experience the south of the island at night – the perfect location for stargazing. Head for Atherfield or Compton as the sun slowly sinks away, with some blankets and nibbles in hand. Pitch a spot high on the cliffs (take a torch so you don't fall off!) and gaze at the heavens for an unmissable light show.
 
-  - title: Foodie treats on the coast
+  - id: foodie-treats-on-the-coast
+    title: Foodie treats on the coast
     content: One of the most beautiful seaside towns in Kent, Whitstable is famed for its glorious oyster heritage, a high street packed with quaint independent shops, and irresistibly picturesque beaches. Head for the harbour front and pitch up at one of the town’s chic oyster bars, slurping fresh-from-the-boat oysters.
 
-  - title: Waterfall hike
+  - id: waterfall-hike
+    title: Waterfall hike
     content: "Set off on a hike from Glen Brittle to this beguiling beauty spot in the shadow of the Black Cuillin Ridge: the Fairy Pools. Cascading waterfalls and enchanting pools dot the landscape, with magnificently clear waters. If you’re feeling brave, take a refreshing (with a capital R) dip, and marvel at this secluded outdoor hideaway. "
 
 ---
@@ -56,7 +65,7 @@ tips:
   {% for tip in page.tips %}
   <div class="bob{% cycle '', ' bob--swap' %}">
     <div class="bob__img">
-      <div class="bg-img bg-img--3-2 bg-img--leaf-sm" style="background-image: url({{site.img}}/img.jpg);"></div>
+      <div class="bg-img bg-img--3-2 bg-img--leaf-sm" style="background-image: url({{site.img}}/content/{{page.id}}/{{tip.id}}.jpg);"></div>
     </div>
     <div class="bob__text">
       <h2 class="title title--sm">{{tip.title}}</h2>
