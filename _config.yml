@@ -2,14 +2,14 @@
 title: The Wellbeing Collection
 client:
   name: Dorset Cereals
-  link: "#client-name"
+  link: https://www.dorsetcereals.co.uk/
 core-se-link: https://www.secretescapes.com/current-sales
 # core-se-link: https://www.secretescapes.de/aktuelle-angebote # DE
 description: >
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 # file paths
-url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
+url:     "https://mp.secretescapes.com" # the base hostname & protocol for your site
 baseurl: "/uk/2020/dorset-wellbeing-collection" # the subpath of the site, including territory and year
 img:     "/uk/2020/dorset-wellbeing-collection/_assets/img"
 css:     "/uk/2020/dorset-wellbeing-collection/_assets/css"
