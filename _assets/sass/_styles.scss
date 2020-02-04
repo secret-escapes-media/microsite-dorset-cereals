@@ -7,3 +7,40 @@
   padding: 4px 0;
   border-bottom: 1px solid $grey-lighter;
 }
+
+.banner {
+  &__logo-bar {
+    z-index: $z-content-upper;
+    width: 100%;
+    font-family: $sans;
+    font-weight: 600;
+    font-size: $s-1;
+    line-height: 1;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    color: $grey-darker;
+    background-color: rgba($white, .8);
+    @include bp($logo-bp) { display: none; }
+    .logo {
+      margin-top: $s-3;
+      @include bp($sm) {
+        margin-top: 0;
+        margin-left: $s-3;
+        transform: translateY(-2px);
+      }
+    }
+    &--blue {
+      color: $white;
+      background-color: rgba(#022439, .8);
+    }
+  }
+  &__logo-bar-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include bp($sm) {
+      flex-direction: row;
+    }
+  }
+}
