@@ -68,21 +68,4 @@
       bottom: auto;
     }
   }
-  &__partner-logo {
-    background-image: url('../img/logo/partner.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
-    margin: auto;
-    width: 60%;
-    max-width: 200px;
-    &:before {
-      content: "";
-      display: block;
-      width: 100%;
-      padding-top: 58.4%;
-    }
-    &--top { margin-bottom: 10px; }
-  }
 }

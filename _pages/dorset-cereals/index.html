@@ -7,8 +7,9 @@ nav-order: 4
 
 banner:
   content: >
-    <div class="container text--center">
-      <div class="banner__partner-logo banner__partner-logo--top"></div>
+    <div class="container container--no-padding text--center">
+      <img style="width: 60%; max-width: 200px;" src="{{site.img}}/logo/partner.svg" alt="{{site.client.name}} Logo">
+      <div class="space--md"></div>
       <h1 class="banner-title">Breakfast on the Slow</h1>
       <div class="space--xs"></div>
       <div class="title--md">Be more Dorset</div>
@@ -86,14 +87,14 @@ products:
 ---
 
 <div class="bg--navy-texture">
-  <div class="vpad--xl">
-    <div class="container">
-      <div class="width width--lg text--center">
-        {{page.intro}}
-      </div>
+
+  <div class="space--sm"></div>
+  <div class="container">
+    <div class="width width--lg text--center">
+      {{page.intro}}
     </div>
   </div>
-
+  <div class="space--xxxl"></div>
 
 
   <div class="container container--xxl">
@@ -121,13 +122,15 @@ products:
 
     <div class="row">
       {% for product in page.products %}
-      <div class="col col--3">
-        <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/products/{{product.id}}.jpg);">
-          <a class="bg-img__link" href="{{product.link}}" target="_blank"></a>
-          <div class="bg-img__overlay bg-img__overlay--transparent"></div>
-        </div>
-        <div class="boxpad--sm text--center">
-          <h4 class="title title--sans title--xxxs text--bold"><a class="text--white" href="{{product.link}}" target="_blank">{{product.title}}</a></h4>
+      <div class="col col--md-6 col--xl-3">
+        <div class="width width--sm">
+          <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/products/{{product.id}}.jpg);">
+            <a id="track-{{page.id}}-{{product.id}}-img" class="bg-img__link" href="{{product.link}}" target="_blank"></a>
+            <div class="bg-img__overlay bg-img__overlay--transparent"></div>
+          </div>
+          <div class="boxpad--sm text--center">
+            <h4 class="title title--sans title--xxxs text--bold"><a id="track-{{page.id}}-{{product.id}}-text" class="text--white" href="{{product.link}}" target="_blank">{{product.title}}</a></h4>
+          </div>
         </div>
       </div>
       {% endfor %}

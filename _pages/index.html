@@ -11,7 +11,7 @@ banner:
   title: >
     <div style="margin: auto; max-width: 600px; padding: 0 1.25rem;">
       <img src="{{site.img}}/banners/overview-title.svg" alt="The Dorset Wellbeing Collection">
-      <div class="space--md"></div>
+      <div class="space--md banner__partnership-space"></div>
     </div>
   blue-logo-bar: true
 
@@ -37,14 +37,14 @@ intro: >
   <div class="container">
     <div class="row row--no-gutters">
 
-      <div class="col col--6">
+      <div class="col">
         {% assign wellbeing-tips = site.html_pages | where: 'id', 'wellbeing-tips' %}
         {% for page in wellbeing-tips %}
-        <div class="bg-img bg-img--1-1" style="background-image: url({{site.img}}/banners/{{page.id}}.jpg);">
+        <div class="bg-img bg-img--1-1 bg-img--sm-4-3 bg-img--md-16-9 bg-img--lg-21-9" style="background-image: url({{site.img}}/banners/{{page.id}}.jpg);">
           <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
           <div class="bg-img__overlay"></div>
           <div class="bg-img__content">
-            <div class="boxpad--lg">
+            <div>
               <h2 class="title title--lg text--bold">{{page.overview.title}}</h2>
               <p class="text--xxl">{{page.overview.intro}}</p>
             </div>

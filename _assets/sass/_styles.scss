@@ -20,7 +20,12 @@
     text-transform: uppercase;
     @include bp($logo-bp) { display: block; }
   }
+  &__partnership-space {
+    display: none;
+    @include bp($logo-bp) { display: block; }
+  }
   &__logo-bar {
+    position: relative;
     z-index: $z-content-upper;
     width: 100%;
     font-family: $sans;

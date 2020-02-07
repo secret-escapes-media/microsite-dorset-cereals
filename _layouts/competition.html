@@ -33,7 +33,7 @@ layout: default
       {% assign form = page.competition-form %}
       <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
         {% include form/messages.html %}
-        <div class="form__content width width--lg">
+        <div class="form__content width" style="max-width: 500px;">
           {% for item in form.fields %}
             <div class="form__input js-form-input">
               {% case item.type %}

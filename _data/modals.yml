@@ -28,7 +28,7 @@
   pages:
     - id: competition
   content: >
-    <div class="content-spacing">
+    <div class="content-spacing width width--xl">
       <h3 class="title title--md">Competition terms & conditions</h3>
       <div class="space--sm"></div>
       <h4 class="title title--xs">Promoter and Participants</h4>
