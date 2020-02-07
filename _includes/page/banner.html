@@ -10,15 +10,16 @@
     {% else %}
       <div class="container container--no-padding text--center">
         {% if page.banner.title-sup %}<h2 class="sub-title">{{page.banner.title-sup}}</h2>{% endif %}
-        <h1 class="banner-title">{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
+        <h1 class="banner-title">{% if page.banner.title %}{{page.banner.title | liquify}}{% else %}{{page.title}}{% endif %}</h1>
         {% if page.banner.title-sub %}<h2 class="sub-title">{{page.banner.title-sub}}</h2>{% endif %}
+        <div class="banner__partnership">In partnership with dorset cereals</div>
       </div>
     {% endif %}
   </div>
   {% unless page.banner.no-logo-bar %}
     <div class="banner__logo-bar{% if page.banner.blue-logo-bar %} banner__logo-bar--blue{% endif %}">
       <div class="container container--lg text--center vpad--sm banner__logo-bar-wrap">
-        <span>In partnership with</span> <a class="logo logo--partner" href="{{site.client.link}}"><img src="{{site.img}}/logo/partner{% unless page.banner.blue-logo-bar %}-black{% endunless %}.svg" alt="{{site.client.name}} Logo"></a>
+        <span>In partnership with</span> <a class="logo logo--partner" href="{{site.client.link}}" target="_blank"><img src="{{site.img}}/logo/partner{% unless page.banner.blue-logo-bar %}-black{% endunless %}.svg" alt="{{site.client.name}} Logo"></a>
       </div>
     </div>
   {% endunless %}

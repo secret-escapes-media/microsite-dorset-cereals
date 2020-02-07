@@ -9,6 +9,17 @@
 }
 
 .banner {
+  &__partnership {
+    display: none;
+    margin-top: $s-5;
+    font-family: $sans;
+    font-size: $s2;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    @include bp($logo-bp) { display: block; }
+  }
   &__logo-bar {
     z-index: $z-content-upper;
     width: 100%;
