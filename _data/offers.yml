@@ -1,3 +1,53 @@
+- title: Moonfleet Manor Hotel
+  location: Weymouth, Dorset
+  description: Elegant Dorset manor house on Chesil Beach
+  price: 109
+  price-description: per room per night
+  saved: 34
+  expires: 2020/02/25
+  image: https://secretescapes-web.imgix.net/sales/109224/a770a69d_52ed_4bf1_9223_4c73cadb3952.jpg?auto=format,compress
+  link: https://www.secretescapes.com/moonfleet-manor-hotel-dorset/sale
+
+- title: 5* The Manor House Hotel & Golf Club
+  location: Castle Combe, Wiltshire
+  description: Five-star Wiltshire manor with Michelin dining
+  price: 165
+  price-description: per room per night
+  saved: 41
+  expires: 2020/03/03
+  image: https://secretescapes-web.imgix.net/sales/57777/72aef639_9ac6_4849_9a98_48d2544b53dd.jpg?auto=format,compress
+  link: https://www.secretescapes.com/5-star-the-manor-house-hotel-and-golf-club-castle-combe-wiltshire/sale
+
+- title: Eckington Manor
+  location: Pershore, Worcestershire
+  description: Award-winning luxe manor near the Cotswolds
+  price: 89
+  price-description: per room per night
+  saved: 51
+  expires: 2020/02/25
+  image: https://secretescapes-web.imgix.net/sales/14165/e578fb71_758b_4d33_8958_07f49d06bf74.jpg?auto=format,compress
+  link: https://www.secretescapes.com/eckington-manor-pershore-worcestershire/sale
+
+- title: Eastwell Manor Champneys Hotel & Spa
+  location: Ashford, Kent
+  description: Kent manor house with plush Champneys spa
+  price: 198
+  price-description: per room per night
+  saved: 50
+  expires: 2020/02/25
+  image: https://secretescapes-web.imgix.net/sales/60131/4be4bbc6_8870_4767_a800_8440eb306049.jpg?auto=format,compress
+  link: https://www.secretescapes.com/eastwell-manor-champneys-hotel-and-spa-ashford-kent/sale
+
+- title: South Lodge
+  location: Horsham, West Sussex
+  description: Five-star Sussex country house with award-winning dining
+  price: 249
+  price-description: per room per night
+  saved: 44
+  expires: 2020/03/03
+  image: https://secretescapes-web.imgix.net/sales/100653/1f77e488_5226_48ba_8d89_248d20d8f6d7.jpg?auto=format,compress
+  link: https://www.secretescapes.com/south-lodge-horsham-west-sussex/sale
+
 - title: Middleton Lodge
   location: Richmond, North Yorkshire
   description: North Yorkshire romance at a Georgian country estate
@@ -7,16 +57,6 @@
   expires: 2020/02/25
   image: https://secretescapes-web.imgix.net/sales/102943/6abc4626_fb1f_44cc_be9a_b3b24f4e10c2.jpg?auto=format,compress
   link: https://www.secretescapes.com/middleton-lodge-richmond-north-yorkshire/sale
-
-- title: Lympstone Manor
-  location: Exmouth, Devon
-  description: Stunning five-star Devon hotel with Michelin-star dining
-  price: 525
-  price-description: per room per night
-  saved: 30
-  expires: 2020/02/18
-  image: https://secretescapes-web.imgix.net/sales/109100/543b25e3_1ec7_461f_af4e_269430ed92b3.jpg?auto=format,compress
-  link: https://www.secretescapes.com/lympstone-manor-exmouth-devon/sale
 
 - title: Laura Ashley Hotel - The Belsfield
   location: Bowness-on-Windermere, Lake District
@@ -31,7 +71,7 @@
 - title: Una St Ives
   location: Carbis Bay, Cornwall
   description: Stylish self-catering lodge in Cornwall
-  price: 109
+  price: 139
   price-description: per lodge per night
   saved: 52
   expires: 2020/02/25
@@ -45,85 +85,45 @@
   price-description: per room per night
   saved: 38
   expires: 2020/02/25
-  image: https://secretescapes-web.imgix.net/sales/37129/a9338d51_3cc2_42b8_9e6a_89101be06d1f.jpg?auto=format,compress
+  image: https://secretescapes-web.imgix.net/sales/37129/ea19bfdd_27f7_448b_a2d8_440bddaee96f.jpg?auto=format,compress
   link: https://www.secretescapes.com/the-green-house-bournemouth-dorset/sale
 
-- title: Summer Lodge Country House Hotel
-  location: Evershot, Dorset
-  description: Five-star Relais & Châteaux Dorset hotel
-  price: 279
+- title: The Ollerod
+  location: Beaminster, Dorset
+  description: Charming ancient Dorset house with prized dining
+  price: 149
   price-description: per room per night
-  saved: 54
-  expires: 2020/02/18
-  image: https://secretescapes-web.imgix.net/sales/56453/511c7747_2cc1_481c_97a9_39b49c55c729.jpg?auto=format,compress
-  link: https://www.secretescapes.com/summer-lodge-country-house-hotel-evershot-dorset-uk/sale
+  saved: 45
+  expires: 2020/03/03
+  image: https://secretescapes-web.imgix.net/sales/86569/26d854ec_5947_4eeb_aaa2_3971205df8e2.jpg?auto=format,compress
+  link: https://www.secretescapes.com/the-ollerod-beaminster-dorset/sale
 
-- title: Moonfleet Manor Hotel
-  location: Weymouth, Dorset
-  description: Elegant Dorset manor house on Chesil Beach
-  price: 109
+- title: Fowey Hall
+  location: Fowey, Cornwall
+  description: Top-rated Cornwall beach stay that inspired Toad Hall
+  price: 119
   price-description: per room per night
-  saved: 34
-  expires: 2020/02/25
-  image: https://secretescapes-web.imgix.net/sales/109224/97116fbc_5e18_4484_af13_aa2aebf2b56c.jpg?auto=format,compress
-  link: https://www.secretescapes.com/moonfleet-manor-hotel-dorset/sale
+  saved: 49
+  expires: 2020/03/03
+  image: https://secretescapes-web.imgix.net/sales/109874/ee94ba04_f310_44d2_aae5_1d94be4d6929.jpg?auto=format,compress
+  link: https://www.secretescapes.com/the-fowey-hall-fowey-cornwall/sale
 
-- title: 5* The Manor House Hotel & Golf Club
-  location: Castle Combe, Wiltshire
-  description: Five-star Wiltshire manor with Michelin dining
-  price: 165
+- title: Loch Melfort Hotel
+  location: Argyll, Scottish Highlands
+  description: Dramatic Scottish landscapes and sea views on the Argyll coast
+  price: 125
   price-description: per room per night
-  saved: 41
-  expires: 2020/02/25
-  image: https://secretescapes-web.imgix.net/sales/57777/72aef639_9ac6_4849_9a98_48d2544b53dd.jpg?auto=format,compress
-  link: https://www.secretescapes.com/5-star-the-manor-house-hotel-and-golf-club-castle-combe-wiltshire/sale
+  saved: 49
+  expires: 2020/03/03
+  image: https://secretescapes-web.imgix.net/sales/54183/be82b4cb_9702_4402_8275_31ff98585025.jpg?auto=format,compress
+  link: https://www.secretescapes.com/loch-melfort-hotel-argyll-scottish-highlands/sale
 
-- title: Eckington Manor
-  location: Pershore, Worcestershire
-  description: Award-winning luxe manor near the Cotswolds
-  price: 89
+- title: Boskerris Hotel
+  location: St Ives, Cornwall
+  description: Get away to an award-winning hotel set on scenic Carbis Bay
+  price: 119
   price-description: per room per night
-  saved: 51
-  expires: 2020/02/25
-  image: https://secretescapes-web.imgix.net/sales/14165/e578fb71_758b_4d33_8958_07f49d06bf74.jpg?auto=format,compress
-  link: https://www.secretescapes.com/eckington-manor-pershore-worcestershire/sale
-
-- title: Homewood
-  location: Near Bath, Somerset
-  description: Relax near Bath at a picturesque hotel with spa
-  price: 129
-  price-description: per room per night
-  saved: 39
-  expires: 2020/02/18
-  image: https://secretescapes-web.imgix.net/sales/101818/b0d20d02_179c_47cf_957e_e192c8aacc23.jpg?auto=format,compress
-  link: https://www.secretescapes.com/homewood-near-bath-somerset/sale
-
-- title: Eastwell Manor Champneys Hotel & Spa
-  location: Ashford, Kent
-  description: Kent manor house with plush Champneys spa
-  price: 198
-  price-description: per room per night
-  saved: 50
-  expires: 2020/02/25
-  image: https://secretescapes-web.imgix.net/sales/60131/4be4bbc6_8870_4767_a800_8440eb306049.jpg?auto=format,compress
-  link: https://www.secretescapes.com/eastwell-manor-champneys-hotel-and-spa-ashford-kent/sale
-
-- title: Treehouse Hotel
-  location: Port Lympne Hotel & Reserve, Kent
-  description: Luxury treehouse stay in a Kent safari park near the coast
-  price: 319
-  price-description: per room per night
-  saved: 26
-  expires: 2020/02/18
-  image: https://secretescapes-web.imgix.net/sales/52114/f5dca7f1_1f1c_455f_9771_f98c9ad750a1.jpg?auto=format,compress
-  link: https://www.secretescapes.com/treehouse-hotel-port-lympne-hotel-and-reserve-kent/sale
-
-- title: South Lodge
-  location: Horsham, West Sussex
-  description: Five-star Sussex country house with award-winning dining
-  price: 249
-  price-description: per room per night
-  saved: 44
-  expires: 2020/02/25
-  image: https://secretescapes-web.imgix.net/sales/100653/1f77e488_5226_48ba_8d89_248d20d8f6d7.jpg?auto=format,compress
-  link: https://www.secretescapes.com/south-lodge-horsham-west-sussex/sale
+  saved: 37
+  expires: 2020/03/03
+  image: https://secretescapes-web.imgix.net/sales/89036/0f8c7a3f_64c8_4887_a6be_c309cdfa3ced.jpg?auto=format,compress
+  link: https://www.secretescapes.com/boskerris-hotel-st-ives-cornwall/sale
