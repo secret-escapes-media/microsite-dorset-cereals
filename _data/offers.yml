@@ -1,42 +1,12 @@
-- title: 5* The Manor House Hotel & Golf Club
-  location: Castle Combe, Wiltshire
-  description: Five-star Wiltshire manor with Michelin dining
-  price: 165
-  price-description: per room per night
-  saved: 41
-  expires: 2020/03/03
-  image: https://secretescapes-web.imgix.net/sales/57777/72aef639_9ac6_4849_9a98_48d2544b53dd.jpg?auto=format,compress
-  link: https://www.secretescapes.com/5-star-the-manor-house-hotel-and-golf-club-castle-combe-wiltshire/sale
-
 - title: The Ollerod
   location: Beaminster, Dorset
-  description: Charming ancient Dorset house with prized dining
-  price: 149
+  description: Charming ancient Dorset house with three AA Rosette dining
+  price: 164
   price-description: per room per night
-  saved: 45
-  expires: 2020/03/10
+  saved: 47
+  expires: 2020/03/17
   image: https://secretescapes-web.imgix.net/sales/86569/26d854ec_5947_4eeb_aaa2_3971205df8e2.jpg?auto=format,compress
   link: https://www.secretescapes.com/the-ollerod-beaminster-dorset/sale
-
-- title: Fowey Hall
-  location: Fowey, Cornwall
-  description: Top-rated Cornwall beach stay that inspired Toad Hall
-  price: 119
-  price-description: per room per night
-  saved: 49
-  expires: 2020/03/10
-  image: https://secretescapes-web.imgix.net/sales/109874/ee94ba04_f310_44d2_aae5_1d94be4d6929.jpg?auto=format,compress
-  link: https://www.secretescapes.com/the-fowey-hall-fowey-cornwall/sale
-
-- title: Loch Melfort Hotel
-  location: Argyll, Scottish Highlands
-  description: Dramatic Scottish landscapes and sea views on the Argyll coast
-  price: 125
-  price-description: per room per night
-  saved: 49
-  expires: 2020/03/03
-  image: https://secretescapes-web.imgix.net/sales/54183/be82b4cb_9702_4402_8275_31ff98585025.jpg?auto=format,compress
-  link: https://www.secretescapes.com/loch-melfort-hotel-argyll-scottish-highlands/sale
 
 - title: Boskerris Hotel
   location: St Ives, Cornwall
@@ -54,14 +24,14 @@
   price: 85
   price-description: per room per night
   saved: 52
-  expires: 2020/03/10
-  image: https://secretescapes-web.imgix.net/sales/40933/245f997b_9311_4170_83dd_d7473308cace.jpg?auto=format,compress
+  expires: 2020/03/17
+  image: https://secretescapes-web.imgix.net/sales/40933/a21e49e2_b701_4c79_9bac_f7fe6acd55d0.jpg?auto=format,compress
   link: https://www.secretescapes.com/the-orchid-hotel-bournemouth-dorset/sale
 
 - title: The Gannet Inn
   location: Carbis Bay, Cornwall
   description: Boutique Cornwall pad perfect for food-lovers
-  price: 89
+  price: 109
   price-description: per room per night
   saved: 62
   expires: 2020/03/10
@@ -78,23 +48,13 @@
   image: https://secretescapes-web.imgix.net/sales/81648/0c717cb9_8520_4b20_94b3_30e2d22d11c7.jpg?auto=format,compress
   link: https://www.secretescapes.com/champneys-henlow-henlow-bedfordshire/sale
 
-- title: Champneys Springs
-  location: Packington, Leicestershire
-  description: Champneys spa stay in lovely Leicestershire
-  price: 180
-  price-description: per room per night
-  saved: 45
-  expires: 2020/03/03
-  image: https://secretescapes-web.imgix.net/sales/34534/11cb61f5_903b_4d40_ac82_d9ce43ada982.jpg?auto=format,compress
-  link: https://www.secretescapes.com/champneys-springs-packington-leicestershire/sale
-
 - title: Retallack Resort & Spa
   location: Winnards Perch, near Padstow, Cornwall
   description: Award-winning, self-catering stay near Padstow
   price: 49
   price-description: per apartment per night
   saved: 48
-  expires: 2020/03/10
+  expires: 2020/03/17
   image: https://secretescapes-web.imgix.net/sales/110473/7a5ed181_7d07_4b9b_a28f_71d9a2417519.jpg?auto=format,compress
   link: https://www.secretescapes.com/retallack-resort-and-spa-winnards-perch-near-padstow-cornwall/sale
 
@@ -104,7 +64,7 @@
   price: 99
   price-description: per room per night
   saved: 46
-  expires: 2020/03/10
+  expires: 2020/03/17
   image: https://secretescapes-web.imgix.net/sales/63820/4ba57976_6021_4bf2_b871_2dc68cf18c66.jpg?auto=format,compress
   link: https://www.secretescapes.com/the-bell-at-stow-and-stuart-house-stow-on-the-wold-gloucestershire/sale
 
@@ -114,6 +74,46 @@
   price: 169
   price-description: per room per night
   saved: 56
-  expires: 2020/03/10
+  expires: 2020/03/17
   image: https://secretescapes-web.imgix.net/sales/110638/ba99e06f_2755_4d27_a5f4_f857cbc242ef.jpg?auto=format,compress
   link: https://www.secretescapes.com/inn-on-the-lake-ullswater-lake-district/sale
+
+- title: Country Living St. George Hotel
+  location: Harrogate, North Yorkshire
+  description: Stunning Harrogate Edwardian mansion with Country Living interiors
+  price: 90
+  price-description: per room per night
+  saved: 52
+  expires: 2020/03/17
+  image: https://secretescapes-web.imgix.net/sales/96933/829605a1_1baa_4df3_b507_50f2360613bc.jpg?auto=format,compress
+  link: https://www.secretescapes.com/country-living-st-george-hotel-harrogate-north-yorkshire/sale
+
+- title: Country Living Lansdown Grove
+  location: Bath, Somerset
+  description: Plush Bath retreat near the city's heart
+  price: 90
+  price-description: per room per night
+  saved: 56
+  expires: 2020/03/17
+  image: https://secretescapes-web.imgix.net/sales/99890/e6f88231_7916_465c_85d6_a33fe564222b.jpg?auto=format,compress
+  link: https://www.secretescapes.com/country-living-lansdown-grove-bath-somerset/sale
+
+- title: The Cornwall Hotel, Spa & Estate
+  location: St Austell, Cornwall
+  description: Luxury Cornish retreat with a state-of-the-art spa
+  price: 89
+  price-description: per room per night
+  saved: 48
+  expires: 2020/03/17
+  image: https://secretescapes-web.imgix.net/sales/106332/15da4edb_1b90_4442_8cb5_619abf9df6c5.jpg?auto=format,compress
+  link: https://www.secretescapes.com/the-cornwall-hotel-spa-and-estate-st-austell-cornwall/sale
+
+- title: The Castle Hotel Taunton
+  location: Taunton, Somerset
+  description: Historic Taunton hotel with first-class dining
+  price: 139
+  price-description: per room per night
+  saved: 40
+  expires: 2020/03/17
+  image: https://secretescapes-web.imgix.net/sales/110720/4d7edd29_4545_40a9_b428_c832887d5631.jpg?auto=format,compress
+  link: https://www.secretescapes.com/the-castle-hotel-taunton-taunton-somerset/sale
