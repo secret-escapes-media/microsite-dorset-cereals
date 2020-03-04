@@ -60,3 +60,13 @@
     }
   }
 }
+
+
+
+.overview-tile {
+  & .bg-img__overlay {
+    border: 0px solid $white;
+    @include transition;
+  }
+  &:hover .bg-img__overlay { border: 3px solid $white; }
+}

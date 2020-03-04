@@ -37,10 +37,10 @@ intro: >
   <div class="container">
     <div class="row row--no-gutters">
 
-      <div class="col">
+      <div class="col col--xxl-6">
         {% assign wellbeing-tips = site.html_pages | where: 'id', 'wellbeing-tips' %}
         {% for page in wellbeing-tips %}
-        <div class="bg-img bg-img--1-1 bg-img--sm-4-3 bg-img--md-16-9 bg-img--lg-21-9" style="background-image: url({{site.img}}/banners/{{page.id}}.jpg);">
+        <div class="overview-tile bg-img bg-img--16-9 bg-img--lg-16-9 bg-img--xxl-1-1" style="background-image: url({{site.img}}/banners/{{page.id}}.jpg);">
           <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
           <div class="bg-img__overlay"></div>
           <div class="bg-img__content">
@@ -55,26 +55,27 @@ intro: >
 
 
 
-      <!--<div class="col col--6">
+      <div class="col col--xxl-6">
         <div class="row row--no-gutters">
 
           {% assign travel-stories = site.html_pages | where: 'layout', 'story' %}
-          {% for page in travel-stories %}
-          <div class="col">
-            <div class="bg-img bg-img--2-1" style="background-image: url({{site.img}}/banners/{{page.id}}.jpg);">
-              <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
+          {% for story in travel-stories %}
+          <div class="col col--xxl-12 col--lg-6">
+            <div class="overview-tile bg-img bg-img--16-9 bg-img--xxl-2-1" style="background-image: url({{site.img}}/banners/{{story.id}}.jpg);">
+              <a href="{{site.baseurl}}{{story.url}}" class="bg-img__link"></a>
               <div class="bg-img__overlay"></div>
               <div class="bg-img__content">
                 <div class="boxpad--lg">
-                  <div class="text--upper text--wide">Travel story</div>
-                  <h2 class="title title--md text--bold">{{page.title}}</h2>
+                  <div class="text--upper text--wide text--bold">Travel story</div>
+                  <h2 class="title title--lg text--bold">{{story.title}}</h2>
+                  <div class="text--xl">By <span class="text--bold">{{story.author}}</span> / <span class="text--bold">{{story.instagram}}</span></div>
                 </div>
               </div>
             </div>
           </div>
           {% endfor %}
         </div>
-      </div>-->
+      </div>
     </div>
   </div>
 

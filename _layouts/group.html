@@ -18,12 +18,15 @@ layout: default
     {% for group-page in group-pages %}
     <div class="col">
       <div class="bg-img bg-img--1-1 text--white" style="background-image: url({{site.img}}/banners/{{group-page.id}}.jpg);">
-        <a href="{{site.baseurl}}/{{group-page.url}}" class="bg-img__link"></a>
+        <a href="{{site.baseurl}}{{group-page.url}}" class="bg-img__link"></a>
         <div class="bg-img__overlay"></div>
         <div class="bg-img__content">
           <div class="boxpad--lg">
             <h2 class="title title--lg">{{group-page.title}}</h2>
-            <p class="text--lg">{{group-page.intro}}</p>
+            <div class="text--xl">By <span class="text--bold">{{group-page.author}}</span> / <span class="text--bold">{{group-page.instagram}}</div>
+            <div class="space--xxs"></div>
+            <hr class="hr--center">
+            <p>{{ group-page.intro | truncate:160 }}</p>
           </div>
         </div>
       </div>
