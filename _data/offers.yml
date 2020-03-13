@@ -8,16 +8,6 @@
   image: https://secretescapes-web.imgix.net/sales/86569/26d854ec_5947_4eeb_aaa2_3971205df8e2.jpg?auto=format,compress
   link: https://www.secretescapes.com/the-ollerod-beaminster-dorset/sale
 
-- title: Boskerris Hotel
-  location: St Ives, Cornwall
-  description: Get away to an award-winning hotel set on scenic Carbis Bay
-  price: 119
-  price-description: per room per night
-  saved: 37
-  expires: 2020/03/10
-  image: https://secretescapes-web.imgix.net/sales/89036/0f8c7a3f_64c8_4887_a6be_c309cdfa3ced.jpg?auto=format,compress
-  link: https://www.secretescapes.com/boskerris-hotel-st-ives-cornwall/sale
-
 - title: The Orchid Hotel
   location: Bournemouth, Dorset
   description: Boutique Bournemouth hotel near the sea
@@ -27,26 +17,6 @@
   expires: 2020/03/17
   image: https://secretescapes-web.imgix.net/sales/40933/a21e49e2_b701_4c79_9bac_f7fe6acd55d0.jpg?auto=format,compress
   link: https://www.secretescapes.com/the-orchid-hotel-bournemouth-dorset/sale
-
-- title: The Gannet Inn
-  location: Carbis Bay, Cornwall
-  description: Boutique Cornwall pad perfect for food-lovers
-  price: 109
-  price-description: per room per night
-  saved: 62
-  expires: 2020/03/10
-  image: https://secretescapes-web.imgix.net/sales/31945/5fae41e1_cf13_48dd_a8c4_6a46175c2adc.jpg?auto=format,compress
-  link: https://www.secretescapes.com/the-gannet-inn-carbis-bay-cornwall/sale
-
-- title: Champneys Henlow
-  location: Henlow, Bedfordshire
-  description: Relax with a healthy full-board stay at a Bedfordshire spa resort
-  price: 229
-  price-description: per room per night
-  saved: 42
-  expires: 2020/03/10
-  image: https://secretescapes-web.imgix.net/sales/81648/0c717cb9_8520_4b20_94b3_30e2d22d11c7.jpg?auto=format,compress
-  link: https://www.secretescapes.com/champneys-henlow-henlow-bedfordshire/sale
 
 - title: Retallack Resort & Spa
   location: Winnards Perch, near Padstow, Cornwall
@@ -117,3 +87,53 @@
   expires: 2020/03/17
   image: https://secretescapes-web.imgix.net/sales/110720/4d7edd29_4545_40a9_b428_c832887d5631.jpg?auto=format,compress
   link: https://www.secretescapes.com/the-castle-hotel-taunton-taunton-somerset/sale
+
+- title: The Hermitage
+  location: Bournemouth, Dorset
+  description: Bournemouth beach hotel with AA Rosette dining
+  price: 134
+  price-description: per room per night
+  saved: 54
+  expires: 2020/03/17
+  image: https://secretescapes-web.imgix.net/sales/60449/77c66690_e592_4e8a_9f67_cc086ea6a3dd.jpg?auto=format,compress
+  link: https://www.secretescapes.com/the-hermitage-bournemouth-dorset/sale
+
+- title: Hotel Collingwood
+  location: Bournemouth, Dorset
+  description: Cosy coastal hotel near Bournemouth's blissful beaches
+  price: 85
+  price-description: per room per night
+  saved: 68
+  expires: 2020/03/17
+  image: https://secretescapes-web.imgix.net/sales/86362/edc2532a_d0ba_4776_9e16_5afa29f7bc71.jpg?auto=format,compress
+  link: https://www.secretescapes.com/hotel-collingwood-bournemouth-dorset/sale
+
+- title: Giraffe Lodge
+  location: Port Lympne Hotel & Reserve, Kent
+  description: Adults-only glamping stay at an award-winning Kent safari park
+  price: 410
+  price-description: per lodge per night
+  saved: 36
+  expires: 2020/03/17
+  image: https://secretescapes-web.imgix.net/sales/30491/cad79694_b957_44ed_a4ed_60ca46573b8f.jpg?auto=format,compress
+  link: https://www.secretescapes.com/giraffe-lodge-port-lympne-hotel-and-reserve-kent/sale
+
+- title: Eagle Brae Log Cabins
+  location: Inverness-shire, Scotland
+  description: Luxurious self-catering wilderness lodge in the Scottish Highlands
+  price: 190
+  price-description: per lodge per night
+  saved: 30
+  expires: 2020/03/24
+  image: https://secretescapes-web.imgix.net/sales/110621/d8f46527_5611_4d7f_b089_fc2f143159bb.jpg?auto=format,compress
+  link: https://www.secretescapes.com/eagle-brae-log-cabins-beauly-inverness-shire-scotland/sale
+
+- title: The Private Hill
+  location: Malton, North Yorkshire
+  description: Cutting-edge North Yorkshire glamping dome with country views
+  price: 145
+  price-description: per room per night
+  saved: 21
+  expires: 2020/03/24
+  image: https://secretescapes-web.imgix.net/sales/111333/feff2fd1_a9b9_435b_a2ab_ee0fcd82a237.jpg?auto=format,compress
+  link: https://www.secretescapes.com/the-private-hill-malton-north-yorkshire/sale
